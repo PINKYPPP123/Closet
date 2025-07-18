@@ -1,0 +1,30 @@
+{
+  "name": "digital-closet",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "yarn clean && vite build",
+    "preview": "vite preview",
+    "tailwind:init": "tailwindcss init -p",
+    "check:format": "prettier --check .",
+    "clean": "rm -rf dist",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^3",
+    "vite": "^7.0.0",
+    "vite-plugin-pwa": "^1.0.1"
+  }
+}

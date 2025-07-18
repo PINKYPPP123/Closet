@@ -1,0 +1,42 @@
+ /* 导入 Tailwind CSS 基础、元件、功能样式 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color:var(--body-bg,#ffffff) ; 
+    transition: background-color 0.5s ease;
+}
+
+.game-container {
+  @apply  bg-white flex flex-col border-8  md:max-w-[820px] md:max-h-[580px]  ;
+  border-color: var(--theme-secondary);
+  margin: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  margin-top: 3%;
+  backdrop-filter: blur(8px);
+  
+}
+.main-content {
+  @apply flex md:flex-grow  p-4 md:gap-4 overflow-hidden;
+}
+
+/* 过渡动画 */
+.fade-in-enter-active,
+.fade-in-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-in-enter-from,
+.fade-in-leave-to {
+  opacity: 0;
+}
+
+.character-panel {
+  @apply flex flex-col items-center justify-center flex-shrink-0;
+  border-color: var(--theme-bg-lighter);
+}
+
