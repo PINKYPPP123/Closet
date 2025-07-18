@@ -23,12 +23,12 @@ export default defineConfig(({ command }) => {
           background_color: "#ffffff",
           icons: [
             {
-              src: "pwa-192x192.png",
+              src: "pwa-192x192.PNG",
               sizes: "192x192",
               type: "image/png",
             },
             {
-              src: "pwa-512x512.png",
+              src: "pwa-512x512.PNG",
               sizes: "512x512",
               type: "image/png",
             },
