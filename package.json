@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "yarn clean && vite build",
+    "build": "yarn clean && vite build && copyfiles -f dist/index.html dist/404.html",
     "preview": "vite preview",
     "tailwind:init": "tailwindcss init -p",
     "check:format": "prettier --check .",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",
     "autoprefixer": "^10.4.21",
+    "copyfiles": "^2.4.1",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
