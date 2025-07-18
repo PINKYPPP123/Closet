@@ -14,7 +14,7 @@ export default defineConfig(({ command }) => {
       vue(),
       VitePWA({
         registerType: "autoUpdate",
-        base: "/Closet/",
+        base: base,
         manifest: {
           name: "Closet",
           short_name: "Closet",
