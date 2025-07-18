@@ -65,7 +65,11 @@
           </svg>
         </button>
         <!-- 播放器-->
-        <audio ref="audioPlayer" src="/background-music.mp3" loop></audio>
+        <audio
+          ref="audioPlayer"
+          :src="`${BASE_URL}background-music.mp3`"
+          loop
+        ></audio>
       </div>
     </div>
     <!-- 类别标签 -->
@@ -139,6 +143,7 @@
 
 <script setup>
 import { ref } from "vue";
+const BASE_URL = import.meta.env.BASE_URL;
 
 //建立 ref 获取 <audio> 元素
 const audioPlayer = ref(null);
