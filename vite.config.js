@@ -3,6 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  base: "/Closet/",
   build: {
     sourcemap: false, // 关闭 source map，防止代码泄漏
   },
