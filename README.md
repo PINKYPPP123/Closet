@@ -1,5 +1,5 @@
 # Closet
-一个换装小游戏
+一个换装小游戏,作者@PP(X：@lv999ppbuny)
 在线版：https://pinkyppp123.github.io/Closet/
 （适配移动端，但是宽屏设备下排版更好看）
 
